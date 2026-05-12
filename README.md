@@ -16,7 +16,7 @@ A clean, professional LaTeX template for academic reports, research articles, an
 - **Comprehensive cross-referencing** – Figures, tables, equations, sections
 - **Academic color scheme** – Professional and readable
 - **Bibliography support** – BibLaTeX with authoryear style
-
+```
 ## Template Structure
 Seka-template/
 ├── Seka.cls # Main class file (customize styling here)
@@ -31,7 +31,7 @@ Seka-template/
 ├── references/ # Bibliography files
 │ └── references.bib
 └── figures/ # Place your images here
-
+```
 text
 
 ## Quick Start
