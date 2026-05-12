@@ -1,6 +1,6 @@
 # Seka Academic Template
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_1.0-lightgrey.svg)](https://creativecommons.org/licenses/by/1.0/)
 [![LaTeX](https://img.shields.io/badge/LaTeX-2e-blue.svg)](https://www.latex-project.org/)
 [![Overleaf](https://img.shields.io/badge/Overleaf-Supported-brightgreen.svg)](https://www.overleaf.com)
 
@@ -52,6 +52,7 @@ pdflatex Seka.tex
 bibtex Seka
 pdflatex Seka.tex
 pdflatex Seka.tex
+```
 Usage
 Edit Seka.tex to change title, author, and abstract
 
@@ -75,9 +76,9 @@ Fonts: Add font packages (e.g., \usepackage{times})
 Headers: Modify \fancyhead commands (lines ~85-95)
 
 License
-This template is released under the Creative Commons CC BY 4.0 License – free to use, share, and adapt with attribution.
+This template is released under the Creative Commons CC BY 1.0 License – free to use, share, and adapt with attribution.
 
-🤝 Contributing
+### Contributing
 Contributions are welcome! Please:
 
 Fork the repository
