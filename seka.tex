@@ -1,0 +1,113 @@
+\documentclass{Seka}
+\usepackage[english]{babel}
+
+% Bibliography file
+\addbibresource{references/references.bib}
+
+% Title information
+\title{A Comprehensive Academic Report Template for Research Publications}
+
+\author{James Mwaura\textsuperscript{1}%
+\thanks{Corresponding author: \href{mailto:james.mwaura@example.com}{james.mwaura@example.com}}
+\\[2pt]
+\textsuperscript{1}Department of Research, University of Excellence}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{firststyle}  % Removes header from first page
+
+% ============================================================
+% ABSTRACT AND KEYWORDS
+% ============================================================
+
+\begin{abstract}
+This is a comprehensive academic report template designed for research publications, theses, and laboratory reports. The template follows standard academic formatting conventions including a two-column layout, professional typography, and modular section organization. This document demonstrates the proper use of all template features including figures, tables, equations, code listings, citations, and custom environments. The template is designed to compile without errors on Overleaf and local LaTeX installations, requiring no special fonts or external dependencies. Researchers can use this template as a starting point for their own publications, adapting the structure to their specific needs while maintaining professional formatting standards.
+\end{abstract}
+
+\keywords{Academic Writing, \LaTeX\ Template, Research Publication, Report Formatting, Scientific Communication}
+
+% ============================================================
+% MAIN SECTIONS - All imported from sections folder
+% ============================================================
+
+% Part I: Foundation
+\input{sections/introduction}
+\input{sections/literature}
+
+% Part II: Core Research
+\input{sections/methodology}
+\input{sections/results}
+
+% Part III: Analysis and Conclusion
+\input{sections/discussion}
+\input{sections/conclusion}
+
+% ============================================================
+% BACK MATTER
+% ============================================================
+
+\appendix
+\section{Appendix A: Additional Data}
+\label{app:data}
+
+This appendix contains supplementary material referenced in the main text.
+
+\begin{table}[h]
+\centering
+\caption{Complete Dataset}
+\label{app:table}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Sample} & \textbf{Value 1} & \textbf{Value 2} \\
+\midrule
+1 & 10.2 & 15.7 \\
+2 & 12.4 & 16.8 \\
+3 & 11.8 & 15.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Appendix B: Code Implementation}
+\label{app:code}
+
+\begin{code}
+\begin{lstlisting}[language=Python]
+def process_data(data):
+    """Process raw data and return results."""
+    results = []
+    for item in data:
+        processed = item * 1.5
+        results.append(processed)
+    return results
+\end{lstlisting}
+\caption{Complete processing function}
+\end{code}
+
+% ============================================================
+% ACKNOWLEDGMENTS
+% ============================================================
+
+\section*{Acknowledgments}
+\addcontentsline{toc}{section}{Acknowledgments}
+
+The author would like to thank the research team for their valuable contributions and feedback. This work was supported by the University of Excellence.
+
+% ============================================================
+% DECLARATION
+% ============================================================
+
+\section*{Declaration of Interest}
+\addcontentsline{toc}{section}{Declaration of Interest}
+
+The author declares no competing interests.
+
+% ============================================================
+% BIBLIOGRAPHY
+% ============================================================
+
+\printbibliography
+
+\end{document}

@@ -1,0 +1,43 @@
+\section{Literature Review}\label{sec:literature}
+
+\subsection{Existing LaTeX Templates}
+
+Several \LaTeX\ templates are available for academic writing. Standard classes like \texttt{article} and \texttt{extarticle} provide basic functionality but require extensive configuration for professional output \cite{latexcompanion}. Dedicated journal classes (e.g., \texttt{IEEEtran}, \texttt{elsarticle}) offer journal-specific formatting but may be overly restrictive.
+
+\begin{note}
+Unlike journal-specific classes, this template balances customization with professional standards, making it suitable for various publication venues.
+\end{note}
+
+\subsection{Required Features for Academic Writing}
+
+Based on a survey of publication requirements, essential template features include \cite{academicwriting2023}:
+
+\begin{itemize}
+    \item Two-column layout for efficient space utilization
+    \item Automatic cross-referencing of figures, tables, and equations
+    \item Citation management with multiple bibliography styles
+    \item Code listing support for computational research
+    \item Modular document structure for complex projects
+\end{itemize}
+
+\subsection{Gap Analysis}
+
+Existing templates often suffer from one or more limitations:
+
+\begin{table}[h]
+\centering
+\caption{Comparison of Existing Templates}
+\label{tab:comparison}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Template} & \textbf{Font Issues} & \textbf{Python Required} & \textbf{Modular} \\
+\midrule
+rho-class & Yes & Yes & Yes \\
+IEEEtran & No & No & Limited \\
+elsarticle & No & No & Limited \\
+\textbf{Seka (This)} & \textbf{No} & \textbf{No} & \textbf{Yes} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This template addresses these gaps by providing a robust, dependency-free solution that maintains professional standards.

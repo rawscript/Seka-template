@@ -1,0 +1,71 @@
+\section{Results}\label{sec:results}
+
+\subsection{Template Features}
+
+The Seka template successfully implements all required features for professional academic writing.
+
+\subsection{Figure Integration}
+
+Figure~\ref{fig:workflow} illustrates the document compilation workflow.
+
+\begin{figure}[h]
+\centering
+\fbox{\parbox{0.8\columnwidth}{
+\centering
+\includegraphics[width=0.7\columnwidth]{seka/figures/kepler.gl (3).png} % Replace with actual figure
+}}
+\caption{Document compilation workflow}
+\label{fig:workflow}
+\end{figure}
+
+\subsection{Table Formatting}
+
+Tables are formatted using the \texttt{booktabs} package for professional quality:
+
+\begin{table}[h]
+\centering
+\caption{Performance Metrics}
+\label{tab:metrics}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Method} & \textbf{Accuracy} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\midrule
+Method A & 94.2\% & 0.93 & 0.91 & 0.92 \\
+Method B & 96.1\% & 0.95 & 0.94 & 0.94 \\
+Method C & 95.3\% & 0.94 & 0.92 & 0.93 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Mathematical Typesetting}
+
+Complex equations are rendered beautifully using \texttt{amsmath}:
+
+\begin{equation}\label{eq:complex}
+\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u} \cdot \nabla) \mathbf{u} = -\frac{1}{\rho} \nabla p + \nu \nabla^2 \mathbf{u}
+\end{equation}
+
+\begin{note}
+Equation~\ref{eq:complex} shows the Navier-Stokes equations for fluid dynamics, demonstrating support for complex mathematical notation.
+\end{note}
+
+\subsection{Code Listings}
+
+Programming code is displayed with syntax highlighting:
+
+\begin{code}
+\begin{lstlisting}[language=R, caption={R code for statistical analysis}]
+# Load required libraries
+library(ggplot2)
+library(dplyr)
+
+# Process data
+results <- data %>%
+    group_by(category) %>%
+    summarise(
+        mean = mean(value),
+        sd = sd(value)
+    )
+\end{lstlisting}
+\label{code:analysis}
+\end{code}

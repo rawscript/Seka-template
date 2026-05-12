@@ -1,0 +1,54 @@
+\section{Methodology}\label{sec:methodology}
+
+\subsection{Template Design Philosophy}
+
+The Seka template follows three core principles:
+
+\begin{enumerate}
+    \item \textbf{Simplicity:} No special fonts or external dependencies
+    \item \textbf{Modularity:} Sections stored in separate files for organization
+    \item \textbf{Professionalism:} Academic formatting standards maintained
+\end{enumerate}
+
+\subsection{Document Class Configuration}
+
+The base class is \texttt{extarticle} with options for 10pt font, two-column layout, and two-sided printing. The geometry package configures margins for optimal readability:
+
+\begin{equation}\label{eq:margins}
+\begin{aligned}
+\text{top margin} &= 2.2 \text{ cm} \\
+\text{bottom margin} &= 2.2 \text{ cm} \\
+\text{left margin} &= 1.8 \text{ cm} \\
+\text{right margin} &= 1.8 \text{ cm}
+\end{aligned}
+\end{equation}
+
+\subsection{Color Scheme}
+
+An academic color palette enhances visual hierarchy without distraction:
+
+\begin{itemize}
+    \item \textcolor{titlecolor}{Title color: Navy blue} for main title
+    \item \textcolor{sectioncolor}{Section color: Dark blue} for headings
+    \item \textcolor{linkcolor}{Link color: Medium blue} for hyperlinks
+\end{itemize}
+
+\subsection{Custom Environments}
+
+Three custom environments improve document structure:
+
+\begin{enumerate}
+    \item \texttt{note}: For supplementary comments (light blue background)
+    \item \texttt{important}: For critical information (orange highlight)
+    \item \texttt{code}: For code listings with proper formatting
+\end{enumerate}
+
+Equation~\ref{eq:custom} demonstrates mathematical formatting.
+
+\begin{equation}\label{eq:custom}
+\mathcal{L}(\theta) = \prod_{i=1}^{n} p(x_i | \theta)
+\end{equation}
+
+\begin{important}
+Always cite sources properly when referencing external work. Use \verb|\cite{}| for individual citations or \verb|\citep{}| for parenthetical citations.
+\end{important}
